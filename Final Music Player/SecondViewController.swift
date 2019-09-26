@@ -29,11 +29,29 @@ class SecondViewController: UIViewController {
     }
     @IBAction func Prev(_ sender: Any)
     {
-        
+        if thisSong == 1
+        {
+            playThis(thisThing: songs[thisSong-1])
+            thisSong += 1
+            label.text = songs[thisSong]
+        }
+        else
+        {
+            
+        }
     }
     @IBAction func next(_ sender: Any)
     {
+        if thisSong < songs.count-1
+        {
         playThis(thisThing: songs[thisSong+1])
+        thisSong += 1
+        label.text = songs[thisSong]
+        }
+        else
+        {
+            
+        }
     }
     @IBAction func UiSlider(_ sender: Any)
     {
@@ -44,7 +62,7 @@ class SecondViewController: UIViewController {
     do{
         let audioPath = Bundle.main.path(forResource: thisThing, ofType: ".mp3")
         try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!)as URL)
-        thisSong += 1
+        
         audioPlayer.play()
       
     }
@@ -55,6 +73,7 @@ class SecondViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         // Do any additional setup after loading the view.
     }
 

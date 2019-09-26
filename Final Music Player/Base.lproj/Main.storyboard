@@ -67,7 +67,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQs-hb-kzf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pioneer-dj-set-static-shot_v1mcbvae__F0000.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pQs-hb-kzf">
                                 <rect key="frame" x="38" y="233" width="339" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -149,6 +149,7 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="pioneer-dj-set-static-shot_v1mcbvae__F0000.jpg" width="711" height="382.5"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
