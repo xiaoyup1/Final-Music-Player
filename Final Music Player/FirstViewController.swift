@@ -8,7 +8,26 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+var songs:[String]=[]
+
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var myTableView: UITableView!
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return songs.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        cell.textLabel?.text = songs[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        //
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +55,10 @@ class FirstViewController: UIViewController {
                     mySong = mySong.replacingOccurrences(of: ".mp3", with: " ")
                     mySong = mySong.replacingOccurrences(of: "%5B", with: " ")
                     mySong = mySong.replacingOccurrences(of: "%5D", with: " ")
-                    print(mySong)
+                    songs.append(mySong)
                 }
             }
+            myTableView.reloadData()
         }
         catch
         {
