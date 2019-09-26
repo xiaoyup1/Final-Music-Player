@@ -14,7 +14,24 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    func gettingSongName()
+    {
+        let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
+        
+        do
+        {
+            let songPath = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
+            
+            for song in songPath
+            {
+                var mySong  = song.absoluteString
+            }
+        }
+        catch
+        {
+            
+        }
+    }
 
 }
 

@@ -16,6 +16,9 @@
 		4E67D5FE233CE8E8007207CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E67D5FC233CE8E8007207CC /* LaunchScreen.storyboard */; };
 		4E67D609233CE8E8007207CC /* Final_Music_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67D608233CE8E8007207CC /* Final_Music_PlayerTests.swift */; };
 		4E67D614233CE8E8007207CC /* Final_Music_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67D613233CE8E8007207CC /* Final_Music_PlayerUITests.swift */; };
+		4E67D625233CE930007207CC /* Ed Sheeran - Shape of You [Official Video].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E67D622233CE930007207CC /* Ed Sheeran - Shape of You [Official Video].mp3 */; };
+		4E67D626233CE930007207CC /* Ed Sheeran - Happier (Official Video).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E67D623233CE930007207CC /* Ed Sheeran - Happier (Official Video).mp3 */; };
+		4E67D627233CE930007207CC /* Im the One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E67D624233CE930007207CC /* Im the One.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		4E67D60F233CE8E8007207CC /* Final Music PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Final Music PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E67D613233CE8E8007207CC /* Final_Music_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_Music_PlayerUITests.swift; sourceTree = "<group>"; };
 		4E67D615233CE8E8007207CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E67D622233CE930007207CC /* Ed Sheeran - Shape of You [Official Video].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ed Sheeran - Shape of You [Official Video].mp3"; sourceTree = "<group>"; };
+		4E67D623233CE930007207CC /* Ed Sheeran - Happier (Official Video).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ed Sheeran - Happier (Official Video).mp3"; sourceTree = "<group>"; };
+		4E67D624233CE930007207CC /* Im the One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Im the One.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 				4E67D5FA233CE8E8007207CC /* Assets.xcassets */,
 				4E67D5FC233CE8E8007207CC /* LaunchScreen.storyboard */,
 				4E67D5FF233CE8E8007207CC /* Info.plist */,
+				4E67D621233CE930007207CC /* songs */,
 			);
 			path = "Final Music Player";
 			sourceTree = "<group>";
@@ -130,6 +137,16 @@
 			);
 			path = "Final Music PlayerUITests";
 			sourceTree = "<group>";
+		};
+		4E67D621233CE930007207CC /* songs */ = {
+			isa = PBXGroup;
+			children = (
+				4E67D622233CE930007207CC /* Ed Sheeran - Shape of You [Official Video].mp3 */,
+				4E67D623233CE930007207CC /* Ed Sheeran - Happier (Official Video).mp3 */,
+				4E67D624233CE930007207CC /* Im the One.mp3 */,
+			);
+			path = songs;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -238,6 +255,9 @@
 				4E67D5FE233CE8E8007207CC /* LaunchScreen.storyboard in Resources */,
 				4E67D5FB233CE8E8007207CC /* Assets.xcassets in Resources */,
 				4E67D5F9233CE8E7007207CC /* Main.storyboard in Resources */,
+				4E67D627233CE930007207CC /* Im the One.mp3 in Resources */,
+				4E67D626233CE930007207CC /* Ed Sheeran - Happier (Official Video).mp3 in Resources */,
+				4E67D625233CE930007207CC /* Ed Sheeran - Shape of You [Official Video].mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
