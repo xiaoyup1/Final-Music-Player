@@ -15,21 +15,25 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBAction func Play(_ sender: Any)
     {
-        if audioPlayer.isPlaying == false
+        if audioPlayer.isPlaying == true && audioPlayer.isPlaying == false
         {
             audioPlayer.play()
         }
     }
     @IBAction func Pause(_ sender: Any)
     {
-        if audioPlayer.isPlaying
+        if audioStuffed == true && audioPlayer.isPlaying
         {
-            audioPlayer.pause()
+            if audioPlayer.isPlaying
+            {
+                audioPlayer.pause()
+            }
         }
+        
     }
     @IBAction func Prev(_ sender: Any)
     {
-        if thisSong == 1
+        if thisSong != 0 &&  audioStuffed == true
         {
             playThis(thisThing: songs[thisSong-1])
             thisSong += 1
@@ -42,7 +46,7 @@ class SecondViewController: UIViewController {
     }
     @IBAction func next(_ sender: Any)
     {
-        if thisSong < songs.count-1
+        if thisSong < songs.count-1 && audioStuffed == true
         {
         playThis(thisThing: songs[thisSong+1])
         thisSong += 1
@@ -55,7 +59,11 @@ class SecondViewController: UIViewController {
     }
     @IBAction func UiSlider(_ sender: Any)
     {
-        audioPlayer.volume = (sender as AnyObject).value
+        if audioStuffed == true
+        {
+            audioPlayer.volume = (sender as AnyObject).value
+
+        }
     }
     func playThis(thisThing:String)
     {
