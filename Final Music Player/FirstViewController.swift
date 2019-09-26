@@ -13,6 +13,8 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        gettingSongName()
     }
     func gettingSongName()
     {
@@ -25,6 +27,17 @@ class FirstViewController: UIViewController {
             for song in songPath
             {
                 var mySong  = song.absoluteString
+                
+                if mySong.contains(".mp3")
+                {
+                    let findString = mySong.components(separatedBy: "/")
+                    mySong = (findString[findString.count-1])
+                    mySong = mySong.replacingOccurrences(of: "%20", with: " ")
+                    mySong = mySong.replacingOccurrences(of: ".mp3", with: " ")
+                    mySong = mySong.replacingOccurrences(of: "%5B", with: " ")
+                    mySong = mySong.replacingOccurrences(of: "%5D", with: " ")
+                    print(mySong)
+                }
             }
         }
         catch
